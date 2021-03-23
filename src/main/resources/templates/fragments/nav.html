@@ -1,0 +1,124 @@
+<div th:fragment="navBar">
+    <!-- [ navigation menu ] start -->
+    <nav class="pc-sidebar ">
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="hospital-dashboard.html" class="b-brand bg-gradient-light">
+
+                    <h1 style='color: #FFFFFF'>MBANK</h1> <!-- ========   change your logo hear   ============ -->
+                    <!-- <img src="assets/images/logo.svg" alt="" class="logo logo-lg">
+                    <img src="assets/images/logo-sm.svg" alt="" class="logo logo-sm"> -->
+                </a>
+            </div>
+            <div class="navbar-content">
+                <ul class="pc-navbar">
+                    <!-- <li class="pc-item pc-caption">
+                        <label>Navigation</label>
+
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link "><span class="pc-micon"><i data-feather="home"></i></span><span class="pc-mtext">Dashboard</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="index.html">Sales</a></li>
+                            <li class="pc-item"><a class="pc-link" href="dashboard-analytics.html">Analytics</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon"><i data-feather="layers"></i></span><span class="pc-mtext">Layouts</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a target="_blank" class="pc-link" href="layout-collapse.html">Collapse</a></li>
+                            <li class="pc-item"><a target="_blank" class="pc-link" href="layout-horizontal.html">Horizontal</a></li>
+                            <li class="pc-item"><a target="_blank" class="pc-link" href="layout-modern.html">Modern</a></li>
+                            <li class="pc-item"><a target="_blank" class="pc-link" href="layout-advance.html">Advance</a></li>
+                            <li class="pc-item"><a target="_blank" class="pc-link" href="layout-topbar.html">Topbar</a></li>
+                            <li class="pc-item"><a target="_blank" class="pc-link" href="layout-tab.html">Tab</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link "><span class="pc-micon"><i data-feather="gift"></i></span><span class="pc-mtext">Widget</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="widget-statistic.html">Statistic</a></li>
+                            <li class="pc-item"><a class="pc-link" href="widget-data.html">Data</a></li>
+                            <li class="pc-item"><a class="pc-link" href="widget-chart.html">Chart</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link "><span class="pc-micon"><i data-feather="user"></i></span><span class="pc-mtext">User</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="user-profile.html">Profile</a></li>
+                            <li class="pc-item"><a class="pc-link" href="user-profile-social.html">Social Profile</a></li>
+                            <li class="pc-item"><a class="pc-link" href="user-card.html">User Card</a></li>
+                            <li class="pc-item"><a class="pc-link" href="user-list.html">User List</a></li>
+                        </ul>
+                    </li>-->
+                    <li class="pc-item pc-caption"><label>Admin Panel</label></li>
+                    <li class="pc-item pc-hasmenu">
+                        <!-- <a href="#!" class="pc-link"><span
+                            class="pc-micon"><i data-feather="home"></i></span><span
+                            class="pc-mtext">Administration</span><span class="pc-arrow"><i
+                                data-feather="chevron-right"></i></span></a> -->
+                        <ul class="pc-hasmenu">
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="hospital-dashboard.html">Dashboard</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   th:href="@{/users}">Utilisateurs</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   th:href="@{/teachers}">Teachers</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="hospital-department.html">Departments</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="hospital-pharmacist.html">Paiements</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="hospital-department.html">Ecoles</a></li>
+                            <!-- <li class="pc-item"><a class="pc-link" href="hospital-nurse.html">Nurse</a></li> -->
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="hospital-pharmacist.html">Subjects</a></li>
+                            <!-- <li class="pc-item"><a class="pc-link" href="hospital-laboratorie.html">Laboratory</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu"><a href="#!" class="pc-link "><span
+                            class="pc-micon"><i data-feather="user-check"></i></span><span
+                            class="pc-mtext">Membership</span><span class="pc-arrow"><i
+                            data-feather="chevron-right"></i></span></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-dashboard.html">Dashboard</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-mail-template.html">Email templates</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-countries.html">Country</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-coupons.html">Coupons</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-newsletter.html">Newsletter</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-user.html">User</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="member-membership.html">Membership</a></li>
+                        </ul>
+                    </li>
+                    <li class="pc-item pc-hasmenu"><a href="#!" class="pc-link "><span
+                            class="pc-micon"><i data-feather="life-buoy"></i></span><span
+                            class="pc-mtext">Helpdesk</span><span class="pc-arrow"><i
+                            data-feather="chevron-right"></i></span></a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="help-dashboard.html">Helpdesk dashboard</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="help-create-ticket.html">Create ticket</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="help-ticket.html">ticket list</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="help-ticket-details.html">ticket Details</a></li>
+                            <li class="pc-item"><a class="pc-link"
+                                                   href="help-customer.html">Customer</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+</div>
